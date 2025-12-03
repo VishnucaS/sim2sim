@@ -1,0 +1,17 @@
+{
+  "name": "Python 3.11 Mujoco",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
+  "postCreateCommand": "pip install --upgrade pip && pip install mujoco mujoco-py torch numpy scipy opencv-python opencv-contrib-python ",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}
